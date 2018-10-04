@@ -96,7 +96,7 @@ def handle_message(event):
         
         line_bot_api.reply_message(event.reply_token, buttons_template)
 #=====[ CAROUSEL MESSAGE ]==========
-    elif text == '/boy':
+    elif text == 'Addme':
         message = TemplateSendMessage(
             alt_text='OTHER MENU',
             template=CarouselTemplate(
@@ -126,11 +126,11 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, message)
 #=====[ FLEX MESSAGE ]==========
-    elif text == 'flex':
+    elif text == '/boy':
         bubble = BubbleContainer(
             direction='ltr',
             hero=ImageComponent(
-                url='https://example.com/cafe.jpg',
+                url='http://resizeimage.net/viewimg/JdQCC49kMpIvjPHI/ye65D/1523427347605.jpg',
                 size='full',
                 aspect_ratio='20:13',
                 aspect_mode='cover',
@@ -140,7 +140,7 @@ def handle_message(event):
                 layout='vertical',
                 contents=[
                     # title
-                    TextComponent(text='Boy-FirA??', weight='bold', size='xl'),
+                    TextComponent(text='Boy-FirA', weight='bold', size='xl'),
                     # review
                     BoxComponent(
                         layout='baseline',
